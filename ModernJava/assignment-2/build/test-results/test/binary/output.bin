@@ -1,0 +1,472 @@
+VU
+VU
+VUIYour assignment HAS NOT BEEN SUBMITTED. The following test results only
+VUestimate your grade.
+VU
+VU
+VU"Your estimated score is: 91.0/91
+VUL(This is not your actual grade for this assignment, just an estimate. Your
+VUPofficial grade will be calculated after you submit your submission.zip file to
+VU
+Coursera.
+VU
+VU
+VUQ------------------------------Assignment Evaluation-----------------------------
+VUQ--------Your solution received points for the following grading rubrics:--------
+VU
+VU
+VUtestIsEmpty2
+VURubric Score: 1.0/1.0
+VU;Goal: Check if the array is empty after adding an element.
+VUReference: ArrayTests.java
+VU
+VUtestIndexOf5
+VURubric Score: 1.0/1.0
+VU0Goal: Get the index of an element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestIsEmpty
+VURubric Score: 1.0/1.0
+VU<Goal: Array.isEmpty() returns true when the array is empty.
+VUReference: ArrayTests.java
+VU
+VUtestIndexOf2
+VURubric Score: 1.0/1.0
+VU0Goal: Get the index of an element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestIndexOf4
+VURubric Score: 1.0/1.0
+VU0Goal: Get the index of an element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestIndexOf3
+VURubric Score: 1.0/1.0
+VU0Goal: Get the index of an element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestIndexOf
+VURubric Score: 1.0/1.0
+VU0Goal: Get the index of an element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll
+VURubric Score: 1.0/1.0
+VU7Goal: Add all elements from a collection to the array.
+VUReference: ArrayTests.java
+VU
+VUtestArrayIteratorRemove
+VURubric Score: 1.0/1.0
+VUOGoal: ArrayIterator.remove() throws an IllegalStateException when remove() is
+VUfrom an empty ArrayIterator.
+VUReference: ArrayTests.java
+VU
+VUtestUncheckedToArray
+VURubric Score: 1.0/1.0
+VUKGoal: Check if uncheckedToArray returns the internal array and its length.
+VUReference: ArrayTests.java
+VU
+VUtestArrayIteratorNext2
+VURubric Score: 1.0/1.0
+VUMGoal: ArrayIterator.next() throws a NoSuchElementException when there is at
+VU least one element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestEnsureCapacityInternal2
+VURubric Score: 1.0/1.0
+VUOGoal: Check if ensureCapacityInternal does not change the capacity when it is
+VU4already larger than the specified minimum capacity.
+VUReference: ArrayTests.java
+VU
+VUtestEnsureCapacityInternal
+VURubric Score: 1.0/1.0
+VUIGoal: Check if ensureCapacityInternal sets the capacity to at least the
+VUspecified minimum capacity.
+VUReference: ArrayTests.java
+VU
+VUtestRemove2
+VURubric Score: 1.0/1.0
+VUBGoal: Check if removing an element at a negative index throws an
+VUIndexOutOfBoundsException.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll4
+VURubric Score: 1.0/1.0
+VU9Goal: Add all elements from an empty array to the array.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll7
+VURubric Score: 1.0/1.0
+VU3Goal: Add all elements from an array to the array.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll3
+VURubric Score: 1.0/1.0
+VU7Goal: Add all elements from a collection to the array.
+VUReference: ArrayTests.java
+VU
+VUtestRemove3
+VURubric Score: 1.0/1.0
+VUNGoal: Remove an element at a valid index and check if the array is not empty.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll2
+VURubric Score: 1.0/1.0
+VU>Goal: Add all elements from an empty collection to the array.
+VUReference: ArrayTests.java
+VU
+VUtestRemove
+VURubric Score: 1.0/1.0
+VUBGoal: Check if removing an element at an invalid index throws an
+VUIndexOutOfBoundsException.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll5
+VURubric Score: 1.0/1.0
+VUJGoal: Add all elements from an empty array to the array with a specified
+VU
+capacity.
+VUReference: ArrayTests.java
+VU
+VUtestAddAll6
+VURubric Score: 1.0/1.0
+VUBGoal: Check if adding a null array throws a NullPointerException.
+VUReference: ArrayTests.java
+VU
+VU	testGet2
+VURubric Score: 1.0/1.0
+VUMGoal: Check if get throws an IndexOutOfBoundsException for a negative index.
+VUReference: ArrayTests.java
+VU
+VUtestRemove4
+VURubric Score: 1.0/1.0
+VUNGoal: Remove an element at a valid index and check if the array is not empty.
+VUReference: ArrayTests.java
+VU
+VUtestGet
+VURubric Score: 1.0/1.0
+VUMGoal: Check if get throws an IndexOutOfBoundsException for an invalid index.
+VUReference: ArrayTests.java
+VU
+VU	testGet3
+VURubric Score: 1.0/1.0
+VULGoal: Get an element at a valid index and check if it matches the expected
+VUvalue.
+VUReference: ArrayTests.java
+VU
+VUtestRangeCheck3
+VURubric Score: 1.0/1.0
+VUIGoal: Check if rangeCheck does not throw an exception for a valid index.
+VUReference: ArrayTests.java
+VU
+VU	testSet2
+VURubric Score: 1.0/1.0
+VUMGoal: Check if set throws an IndexOutOfBoundsException for a negative index.
+VUReference: ArrayTests.java
+VU
+VUtestRangeCheck
+VURubric Score: 1.0/1.0
+VUNGoal: Check if rangeCheck throws an IndexOutOfBoundsException for an invalid
+VUindex.
+VUReference: ArrayTests.java
+VU
+VUtestSet
+VURubric Score: 1.0/1.0
+VUMGoal: Check if set throws an IndexOutOfBoundsException for an invalid index.
+VUReference: ArrayTests.java
+VU
+VU	testSet3
+VURubric Score: 1.0/1.0
+VULGoal: Set an element at a valid index and check if it returns the previous
+VU	element.
+VUReference: ArrayTests.java
+VU
+VUtestRangeCheck2
+VURubric Score: 1.0/1.0
+VUNGoal: Check if rangeCheck throws an IndexOutOfBoundsException for a negative
+VUindex.
+VUReference: ArrayTests.java
+VU
+VUtestArrayIteratorHasNext3
+VURubric Score: 1.0/1.0
+VURGoal: ArrayIterator.hasNext() returns true when there is at least one element in
+VUthe array.
+VUReference: ArrayTests.java
+VU
+VUtestArrayIteratorNext
+VURubric Score: 1.0/1.0
+VUNGoal: ArrayIterator.next() throws a NoSuchElementException when there are no
+VUelements in the array.
+VUReference: ArrayTests.java
+VU
+VUtestForEach3
+VURubric Score: 1.0/1.0
+VURGoal: Check if forEach throws an IllegalArgumentException when the action throws
+VUan IllegalArgumentException.
+VUReference: ArrayTests.java
+VU
+VUtestConstructor
+VURubric Score: 1.0/1.0
+VUOGoal: Check if the default constructor creates an empty array and the size is
+VUzero.
+VUReference: ArrayTests.java
+VU
+VUtestReplaceAll
+VURubric Score: 1.0/1.0
+VU:Goal: Check if replaceAll does not modify an empty array.
+VUReference: ArrayTests.java
+VU
+VUtestForEach
+VURubric Score: 1.0/1.0
+VULGoal: Check if forEach applies the specified action to each element in the
+VUarray.
+VUReference: ArrayTests.java
+VU
+VUtestReplaceAll3
+VURubric Score: 1.0/1.0
+VUNGoal: Check if replaceAll throws an IllegalArgumentException and applies the
+VU1specified operator to each element in the array.
+VUReference: ArrayTests.java
+VU
+VUtestIterator
+VURubric Score: 1.0/1.0
+VUFGoal: Check if the iterator returned by iterator() is an instance of
+VUArrayIterator.
+VUReference: ArrayTests.java
+VU
+VUtestForEach2
+VURubric Score: 1.0/1.0
+VURGoal: Check if forEach applies the specified action to each element in the array
+VU&when the action accepts the elements.
+VUReference: ArrayTests.java
+VU
+VUtestReplaceAll2
+VURubric Score: 1.0/1.0
+VUQGoal: Check if replaceAll applies the specified operator to each element in the
+VUarray.
+VUReference: ArrayTests.java
+VU
+VUtestConstructor3
+VURubric Score: 1.0/1.0
+VU:Goal: Check if the array is properly converted to a list.
+VUReference: ArrayTests.java
+VU
+VUtestConstructor3
+VURubric Score: 1.0/1.0
+VUQGoal: Check if the constructor throws a NullPointerException when passed a null
+VUcollection.
+VUReference: ArrayTests.java
+VU
+VUtestConstructor2
+VURubric Score: 1.0/1.0
+VUQGoal: Check if the constructor initializes the array with the elements from the
+VUcollection.
+VUReference: ArrayTests.java
+VU
+VUtestArrayIteratorHasNext
+VURubric Score: 1.0/1.0
+VUOGoal: ArrayIterator.hasNext() returns false when there are no elements in the
+VUarray.
+VUReference: ArrayTests.java
+VU
+VUtestArrayIteratorHasNext2
+VURubric Score: 1.0/1.0
+VUOGoal: ArrayIterator.hasNext() throws a NullPointerException when the array is
+VUnull.
+VUReference: ArrayTests.java
+VU
+VUtestToArray
+VURubric Score: 1.0/1.0
+VU/Goal: Check if toArray returns an empty array.
+VUReference: ArrayTests.java
+VU
+VUtestToArray4
+VURubric Score: 1.0/1.0
+VUQGoal: Check if toArray returns a new array with the elements from the array and
+VUHthe specified array length matches the number of elements in the array.
+VUReference: ArrayTests.java
+VU
+VUtestAdd
+VURubric Score: 1.0/1.0
+VU@Goal: Add an element to the array and check if it is not empty.
+VUReference: ArrayTests.java
+VU
+VU	testAdd3
+VURubric Score: 1.0/1.0
+VUQGoal: Add elements to the array with a specific capacity and check if it is not
+VU"empty and the capacity increases.
+VUReference: ArrayTests.java
+VU
+VUtestToArray2
+VURubric Score: 1.0/1.0
+VURGoal: Check if toArray returns the same array when passed as an argument and the
+VU4length matches the number of elements in the array.
+VUReference: ArrayTests.java
+VU
+VU	testAdd2
+VURubric Score: 1.0/1.0
+VUOGoal: Add an element to the array with a specific capacity and check if it is
+VUnot empty.
+VUReference: ArrayTests.java
+VU
+VUtestToArray3
+VURubric Score: 1.0/1.0
+VUOGoal: Check if toArray returns the same array when passed as an argument, the
+VUQlength matches the number of elements in the array, and the elements are copied
+VUto the specified array.
+VUReference: ArrayTests.java
+VU
+VUtestCountSyllables3
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of syllables in the text is counted correctly
+VUfor a single character word.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSyllables6
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the number of syllables in an empty string is counted as 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSentences4
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the number of sentences in an empty string is counted as 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSentences3
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the number of sentences in an empty string is counted as 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSyllables4
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of syllables in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSyllables7
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of syllables in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSyllables5
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of syllables in a null string is counted as 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSyllables2
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of syllables in the text is counted correctly
+VUfor a simple word.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSentences2
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of sentences in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VU(testComputeFleschKincaidGradeLevelScore
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level score is computed correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VU*testBardAnalyzerRunAndReturnSortedResults
+VURubric Score: 10.0/10.0
+VUNGoal: To verify that BardPlayAnalyzer's runAndReturnResults() method returns
+VUexpected results.
+VU!Reference: BardPlayAnalyzer.java
+VU
+VU)testComputeFleschKincaidGradeLevelScore2
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level score is computed correctly
+VUfor a simple input.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VU)testComputeFleschKincaidGradeLevelScore3
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level score is computed correctly
+VUfor a more complex input.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VU)testComputeFleschKincaidGradeLevelScore4
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level score is computed correctly
+VUwhen the sentence count is 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountItems
+VURubric Score: 1.0/1.0
+VUIGoal: To ensure that the countItems method counts the items in the text
+VUcorrectly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountItems3
+VURubric Score: 1.0/1.0
+VUPGoal: To ensure that the countItems method counts the items in an empty string
+VUcorrectly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountItems2
+VURubric Score: 1.0/1.0
+VUNGoal: To ensure that the countItems method counts the items in a null string
+VUcorrectly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCalculate2
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level is calculated correctly for
+VUa string with only vowels.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCalculate
+VURubric Score: 1.0/1.0
+VUMGoal: To ensure that the Flesch-Kincaid grade level is calculated correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountWords3
+VURubric Score: 1.0/1.0
+VUMGoal: To ensure that the number of words in an empty string is counted as 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCalculate3
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level is calculated correctly for
+VU"a string with a single character.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountWords
+VURubric Score: 1.0/1.0
+VUKGoal: To ensure that the number of words in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSyllables
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of syllables in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountSentences
+VURubric Score: 1.0/1.0
+VUOGoal: To ensure that the number of sentences in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCalculate5
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level is calculated correctly for
+VUan empty string.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCalculate4
+VURubric Score: 1.0/1.0
+VUQGoal: To ensure that the Flesch-Kincaid grade level is calculated correctly for
+VUa null string.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountWords2
+VURubric Score: 1.0/1.0
+VUKGoal: To ensure that the number of words in the text is counted correctly.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VUtestCountWords4
+VURubric Score: 1.0/1.0
+VUMGoal: To ensure that the number of words in an empty string is counted as 0.
+VU7Reference: FleschKincaidGradeLevelCalculatorTests.java
+VU
+VU

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" tests="28" skipped="0" failures="0" errors="0" timestamp="2024-10-10T01:17:33" hostname="YANG_G15" time="0.969">
+  <properties/>
+  <testcase name="testCountSyllables2" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.013"/>
+  <testcase name="testCountSyllables3" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountSyllables4" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountSyllables5" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountSyllables6" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountSyllables7" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCalculate2" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.002"/>
+  <testcase name="testCalculate3" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCalculate4" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCalculate5" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountItems" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountWords" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCalculate" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountSyllables" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.004"/>
+  <testcase name="testComputeFleschKincaidGradeLevelScore" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountItems2" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountItems3" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountSentences" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountWords2" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountWords3" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountWords4" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testCountSentences2" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountSentences3" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testCountSentences4" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testComputeFleschKincaidGradeLevelScore2" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testComputeFleschKincaidGradeLevelScore3" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.001"/>
+  <testcase name="testComputeFleschKincaidGradeLevelScore4" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.0"/>
+  <testcase name="testBardAnalyzerRunAndReturnResults" classname="vandy.mooc.functional.FleschKincaidGradeLevelCalculatorTests" time="0.933"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

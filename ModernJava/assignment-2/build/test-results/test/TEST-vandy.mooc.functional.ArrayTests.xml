@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vandy.mooc.functional.ArrayTests" tests="54" skipped="0" failures="0" errors="0" timestamp="2024-10-10T01:17:34" hostname="YANG_G15" time="0.518">
+  <properties/>
+  <testcase name="testReplaceAll" classname="vandy.mooc.functional.ArrayTests" time="0.427"/>
+  <testcase name="testRangeCheck2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testRangeCheck3" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testUncheckedToArray" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testToArray2" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testToArray3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testToArray4" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testToArray" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testAddAll2" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testAddAll3" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testAddAll4" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testAddAll5" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testAddAll6" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testAddAll7" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testArrayIteratorRemove" classname="vandy.mooc.functional.ArrayTests" time="0.016"/>
+  <testcase name="testAdd" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testGet" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testSet" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testAdd2" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testAdd3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testGet2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testGet3" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testSet2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testSet3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testForEach" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testConstructor2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testConstructor3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testArrayIteratorHasNext2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testArrayIteratorHasNext3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testReplaceAll2" classname="vandy.mooc.functional.ArrayTests" time="0.022"/>
+  <testcase name="testReplaceAll3" classname="vandy.mooc.functional.ArrayTests" time="0.004"/>
+  <testcase name="testArrayIteratorNext" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testIsEmpty2" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testEnsureCapacityInternal2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testEnsureCapacityInternal" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testRemove2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testRemove3" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testRemove4" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testIndexOf2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testIndexOf3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testIndexOf4" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testIndexOf5" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testArrayIteratorNext2" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testForEach2" classname="vandy.mooc.functional.ArrayTests" time="0.01"/>
+  <testcase name="testForEach3" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testAddAll" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testAsList" classname="vandy.mooc.functional.ArrayTests" time="0.002"/>
+  <testcase name="testIndexOf" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testIsEmpty" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testRemove" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testRangeCheck" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testArrayIteratorHasNext" classname="vandy.mooc.functional.ArrayTests" time="0.001"/>
+  <testcase name="testIterator" classname="vandy.mooc.functional.ArrayTests" time="0.0"/>
+  <testcase name="testConstructor" classname="vandy.mooc.functional.ArrayTests" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

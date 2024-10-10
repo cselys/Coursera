@@ -1,0 +1,304 @@
+------------------------------Assignment Evaluation-----------------------------
+--------Your solution received points for the following grading rubrics:--------
+
+
+testEnsureCapacityInternal
+Rubric Score: 1.0/1.0
+Goal: Check if ensureCapacityInternal sets the capacity to at least the
+specified minimum capacity.
+Reference: ArrayTests.java
+
+testArrayIteratorHasNext2
+Rubric Score: 1.0/1.0
+Goal: ArrayIterator.hasNext() throws a NullPointerException when the array is
+null.
+Reference: ArrayTests.java
+
+testArrayIteratorHasNext
+Rubric Score: 1.0/1.0
+Goal: ArrayIterator.hasNext() returns false when there are no elements in the
+array.
+Reference: ArrayTests.java
+
+testArrayIteratorNext
+Rubric Score: 1.0/1.0
+Goal: ArrayIterator.next() throws a NoSuchElementException when there are no
+elements in the array.
+Reference: ArrayTests.java
+
+testEnsureCapacityInternal2
+Rubric Score: 1.0/1.0
+Goal: Check if ensureCapacityInternal does not change the capacity when it is
+already larger than the specified minimum capacity.
+Reference: ArrayTests.java
+
+testArrayIteratorHasNext3
+Rubric Score: 1.0/1.0
+Goal: ArrayIterator.hasNext() returns true when there is at least one element in
+the array.
+Reference: ArrayTests.java
+
+testArrayIteratorNext2
+Rubric Score: 1.0/1.0
+Goal: ArrayIterator.next() throws a NoSuchElementException when there is at
+least one element in the array.
+Reference: ArrayTests.java
+
+testArrayIteratorRemove
+Rubric Score: 1.0/1.0
+Goal: ArrayIterator.remove() throws an IllegalStateException when remove() is
+from an empty ArrayIterator.
+Reference: ArrayTests.java
+
+testUncheckedToArray
+Rubric Score: 1.0/1.0
+Goal: Check if uncheckedToArray returns the internal array and its length.
+Reference: ArrayTests.java
+
+testIndexOf3
+Rubric Score: 1.0/1.0
+Goal: Get the index of an element in the array.
+Reference: ArrayTests.java
+
+testIndexOf4
+Rubric Score: 1.0/1.0
+Goal: Get the index of an element in the array.
+Reference: ArrayTests.java
+
+testIsEmpty2
+Rubric Score: 1.0/1.0
+Goal: Check if the array is empty after adding an element.
+Reference: ArrayTests.java
+
+testAddAll2
+Rubric Score: 1.0/1.0
+Goal: Add all elements from an empty collection to the array.
+Reference: ArrayTests.java
+
+testAddAll
+Rubric Score: 1.0/1.0
+Goal: Add all elements from a collection to the array.
+Reference: ArrayTests.java
+
+testIsEmpty
+Rubric Score: 1.0/1.0
+Goal: Array.isEmpty() returns true when the array is empty.
+Reference: ArrayTests.java
+
+testAddAll5
+Rubric Score: 1.0/1.0
+Goal: Add all elements from an empty array to the array with a specified
+capacity.
+Reference: ArrayTests.java
+
+testAddAll6
+Rubric Score: 1.0/1.0
+Goal: Check if adding a null array throws a NullPointerException.
+Reference: ArrayTests.java
+
+testAddAll3
+Rubric Score: 1.0/1.0
+Goal: Add all elements from a collection to the array.
+Reference: ArrayTests.java
+
+testAddAll4
+Rubric Score: 1.0/1.0
+Goal: Add all elements from an empty array to the array.
+Reference: ArrayTests.java
+
+testIndexOf5
+Rubric Score: 1.0/1.0
+Goal: Get the index of an element in the array.
+Reference: ArrayTests.java
+
+testIndexOf
+Rubric Score: 1.0/1.0
+Goal: Get the index of an element in the array.
+Reference: ArrayTests.java
+
+testIndexOf2
+Rubric Score: 1.0/1.0
+Goal: Get the index of an element in the array.
+Reference: ArrayTests.java
+
+testRemove4
+Rubric Score: 1.0/1.0
+Goal: Remove an element at a valid index and check if the array is not empty.
+Reference: ArrayTests.java
+
+testRemove
+Rubric Score: 1.0/1.0
+Goal: Check if removing an element at an invalid index throws an
+IndexOutOfBoundsException.
+Reference: ArrayTests.java
+
+testAdd2
+Rubric Score: 1.0/1.0
+Goal: Add an element to the array with a specific capacity and check if it is
+not empty.
+Reference: ArrayTests.java
+
+testAdd
+Rubric Score: 1.0/1.0
+Goal: Add an element to the array and check if it is not empty.
+Reference: ArrayTests.java
+
+testSet2
+Rubric Score: 1.0/1.0
+Goal: Check if set throws an IndexOutOfBoundsException for a negative index.
+Reference: ArrayTests.java
+
+testRemove2
+Rubric Score: 1.0/1.0
+Goal: Check if removing an element at a negative index throws an
+IndexOutOfBoundsException.
+Reference: ArrayTests.java
+
+testGet3
+Rubric Score: 1.0/1.0
+Goal: Get an element at a valid index and check if it matches the expected
+value.
+Reference: ArrayTests.java
+
+testToArray
+Rubric Score: 1.0/1.0
+Goal: Check if toArray returns an empty array.
+Reference: ArrayTests.java
+
+testToArray2
+Rubric Score: 1.0/1.0
+Goal: Check if toArray returns the same array when passed as an argument and the
+length matches the number of elements in the array.
+Reference: ArrayTests.java
+
+testRemove3
+Rubric Score: 1.0/1.0
+Goal: Remove an element at a valid index and check if the array is not empty.
+Reference: ArrayTests.java
+
+testRangeCheck
+Rubric Score: 1.0/1.0
+Goal: Check if rangeCheck throws an IndexOutOfBoundsException for an invalid
+index.
+Reference: ArrayTests.java
+
+testRangeCheck2
+Rubric Score: 1.0/1.0
+Goal: Check if rangeCheck throws an IndexOutOfBoundsException for a negative
+index.
+Reference: ArrayTests.java
+
+testGet2
+Rubric Score: 1.0/1.0
+Goal: Check if get throws an IndexOutOfBoundsException for a negative index.
+Reference: ArrayTests.java
+
+testAddAll7
+Rubric Score: 1.0/1.0
+Goal: Add all elements from an array to the array.
+Reference: ArrayTests.java
+
+testRangeCheck3
+Rubric Score: 1.0/1.0
+Goal: Check if rangeCheck does not throw an exception for a valid index.
+Reference: ArrayTests.java
+
+testSet
+Rubric Score: 1.0/1.0
+Goal: Check if set throws an IndexOutOfBoundsException for an invalid index.
+Reference: ArrayTests.java
+
+testSet3
+Rubric Score: 1.0/1.0
+Goal: Set an element at a valid index and check if it returns the previous
+element.
+Reference: ArrayTests.java
+
+testGet
+Rubric Score: 1.0/1.0
+Goal: Check if get throws an IndexOutOfBoundsException for an invalid index.
+Reference: ArrayTests.java
+
+testAdd3
+Rubric Score: 1.0/1.0
+Goal: Add elements to the array with a specific capacity and check if it is not
+empty and the capacity increases.
+Reference: ArrayTests.java
+
+testForEach
+Rubric Score: 1.0/1.0
+Goal: Check if forEach applies the specified action to each element in the
+array.
+Reference: ArrayTests.java
+
+testReplaceAll
+Rubric Score: 1.0/1.0
+Goal: Check if replaceAll does not modify an empty array.
+Reference: ArrayTests.java
+
+testForEach2
+Rubric Score: 1.0/1.0
+Goal: Check if forEach applies the specified action to each element in the array
+when the action accepts the elements.
+Reference: ArrayTests.java
+
+testToArray4
+Rubric Score: 1.0/1.0
+Goal: Check if toArray returns a new array with the elements from the array and
+the specified array length matches the number of elements in the array.
+Reference: ArrayTests.java
+
+testConstructor3
+Rubric Score: 1.0/1.0
+Goal: Check if the constructor throws a NullPointerException when passed a null
+collection.
+Reference: ArrayTests.java
+
+testIterator
+Rubric Score: 1.0/1.0
+Goal: Check if the iterator returned by iterator() is an instance of
+ArrayIterator.
+Reference: ArrayTests.java
+
+testConstructor3
+Rubric Score: 1.0/1.0
+Goal: Check if the array is properly converted to a list.
+Reference: ArrayTests.java
+
+testConstructor
+Rubric Score: 1.0/1.0
+Goal: Check if the default constructor creates an empty array and the size is
+zero.
+Reference: ArrayTests.java
+
+testReplaceAll2
+Rubric Score: 1.0/1.0
+Goal: Check if replaceAll applies the specified operator to each element in the
+array.
+Reference: ArrayTests.java
+
+testForEach3
+Rubric Score: 1.0/1.0
+Goal: Check if forEach throws an IllegalArgumentException when the action throws
+an IllegalArgumentException.
+Reference: ArrayTests.java
+
+testConstructor2
+Rubric Score: 1.0/1.0
+Goal: Check if the constructor initializes the array with the elements from the
+collection.
+Reference: ArrayTests.java
+
+testToArray3
+Rubric Score: 1.0/1.0
+Goal: Check if toArray returns the same array when passed as an argument, the
+length matches the number of elements in the array, and the elements are copied
+to the specified array.
+Reference: ArrayTests.java
+
+testReplaceAll3
+Rubric Score: 1.0/1.0
+Goal: Check if replaceAll throws an IllegalArgumentException and applies the
+specified operator to each element in the array.
+Reference: ArrayTests.java
+
