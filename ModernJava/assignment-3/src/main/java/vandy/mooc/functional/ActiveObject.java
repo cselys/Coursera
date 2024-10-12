@@ -2,6 +2,7 @@ package vandy.mooc.functional;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
 import java.util.function.Function;
@@ -53,9 +54,8 @@ public class ActiveObject<T, R>
                         T params) {
         // Create a virtual Thread closure and assign it to
         // mRunnableFuture.
-
+        mRunnableFuture = makeThreadClosure( function, params);
         // TODO -- you fill in here.
-        
     }
 
     /**
@@ -77,14 +77,23 @@ public class ActiveObject<T, R>
 
         // TODO -- you fill in here, replacing 'mRunnableFuture = null'
         //  with the proper code.
-        RunnableFuture<R> runnableFuture = null;
+//        RunnableFuture<R> runnableFuture = null;
+        var runnableFuture = new FutureTask<R>( () ->{
+            return mResult =function.apply(params);
+            }
+        );
+
 
         // Create a new unstarted virtual Thread that will run
         // mRunnableFuture in the background after it's started.
 
         // TODO -- you fill in here, replacing 'mThread = null'
         //  with the proper code.
-        mThread = null;
+        mThread = Thread.ofVirtual().unstarted(runnableFuture);
+//                Thread.startVirtualThread(runnableFuture);
+//                Thread(runnableFuture);
+//                Thread.ofVirtual(runnableFuture);
+//
 
         // Return runnableFuture.
         return runnableFuture;
@@ -95,7 +104,7 @@ public class ActiveObject<T, R>
      */
     public void start() {
         // Start the virtual Thread.
-
+        mThread.start();
         // TODO -- you fill in here.
         
     }
@@ -129,7 +138,22 @@ public class ActiveObject<T, R>
 
         // TODO -- you fill in here, replacing 'return null' with the
         // proper code.
-        return null;
+        ActiveObject<Map.Entry<K, V>, R>[] activeObjects = new ActiveObject[inputMap.size()];
+        int index = 0;
+        for (Map.Entry<K, V> entry : inputMap.entrySet()) {
+            activeObjects[index] = new ActiveObject(task, entry);
+//                    new ActiveObject<Map.Entry<K, V>, R>(e -> task.apply(entry), entry);
+            index++;
+        }
+
+        ActiveObjectArray<K, V, R> res = new ActiveObjectArray<>();
+        res.addAll(List.of(activeObjects));
+
+        return res;
+
+//        ActiveObjectArray<K, V, R> activeObjectArray = new Array<R>(activeObjects);
+//
+//        return null;
     }
 
     /*

@@ -193,7 +193,7 @@ public class BardPlayAnalyzerTests {
     public void testBardAnalyzerRunAndReturnSortedResults() {
         var results = new BardPlayAnalyzer().runAndReturnResults().toArray();
         for (int i = 0; i < results.length; i++) {
-//            System.out.println(results[i]);
+            System.out.println(results[i]);
             assertEquals(expected[i], results[i]);
         }
     }

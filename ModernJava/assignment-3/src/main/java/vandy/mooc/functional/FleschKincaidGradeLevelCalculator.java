@@ -87,7 +87,10 @@ public class FleschKincaidGradeLevelCalculator {
 
         // TODO -- you fill in here, replacing 'return 0' with
         // the proper code.
-        return 0;
+        BreakIterator iterator = BreakIterator.getSentenceInstance();
+        Predicate<String> predicate = s -> true;
+        Function<String, Integer> mapper = s -> 1;
+        return countItems(text,iterator,predicate,mapper);
     }
 
     /**
@@ -105,7 +108,10 @@ public class FleschKincaidGradeLevelCalculator {
 
         // TODO -- you fill in here, replacing 'return 0' with the
         // proper code.
-        return 0;
+        BreakIterator iterator = BreakIterator.getWordInstance();
+        Predicate<String> predicate = s -> Character.isLetterOrDigit(s.charAt(0));
+        Function<String, Integer> mapper = s -> 1;
+        return countItems(text,iterator,predicate,mapper);
     }
 
     /**
@@ -124,7 +130,10 @@ public class FleschKincaidGradeLevelCalculator {
 
         // TODO -- you fill in here, replacing 'return 0' with
         // the proper code.
-        return 0;
+        BreakIterator iterator = BreakIterator.getWordInstance();
+        Predicate<String> predicate = s -> Character.isLetterOrDigit(s.charAt(0));
+        Function<String, Integer> mapper = s -> countSyllablesInWord(s);
+        return countItems(text,iterator,predicate,mapper);
     }
 
     /**
@@ -153,7 +162,19 @@ public class FleschKincaidGradeLevelCalculator {
 
         // TODO -- you fill in here, replacing 'return 0' with the
         // proper code.
-        return 0;
+        if (text == null || iterator == null || predicate == null || mapper == null) {
+            return 0;
+        }
+        int count = 0;
+        iterator.setText(text);
+        int start = iterator.first();
+
+        for(int end = iterator.next(); end != BreakIterator.DONE; start = end, end = iterator.next()  ){
+            String substring = text.substring(start, end);
+            if(predicate.test(substring))
+                count += mapper.apply(substring);
+        }
+        return count;
     }
 
     /**
@@ -219,4 +240,3 @@ public class FleschKincaidGradeLevelCalculator {
         return syllableCount;
     }
 }
-

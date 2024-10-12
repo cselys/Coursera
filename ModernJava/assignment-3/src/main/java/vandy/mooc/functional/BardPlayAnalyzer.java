@@ -4,6 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -116,7 +117,11 @@ public class BardPlayAnalyzer
         // processed.
 
         // TODO -- Replace 'return null' with the correct solution.
-        return null;
+        ActiveObjectArray<String, String, Double> activeObjects = makeActiveObjects();
+        startActiveObjects(activeObjects);
+        return processActiveObjects(activeObjects);
+
+//        return null;
     }
 
     /**
@@ -130,7 +135,7 @@ public class BardPlayAnalyzer
         // BardMap.
 
         // TODO -- Replace 'return null' with the correct solution.
-        return null;
+        return ActiveObject.makeActiveObjects(this::processInput,sBardMap);
     }
 
     /**
@@ -146,7 +151,7 @@ public class BardPlayAnalyzer
         // each one via the ActiveObject.start() method reference.
 
         // TODO -- Replace 'return' with the correct solution.
-        
+        activeObjects.forEach(ActiveObject::start);
     }
 
     /**
@@ -173,7 +178,13 @@ public class BardPlayAnalyzer
         // of the results Array.
 
         // TODO -- Write Java code containing the correct solution.
-        
+        for(ActiveObject<Map.Entry<String, String>, Double> activeObject : activeObjects){
+            try{
+                results.add(makeStringResult(activeObject, activeObject.get(3, TimeUnit.SECONDS)));
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
 
         // Return the Array
         return results;

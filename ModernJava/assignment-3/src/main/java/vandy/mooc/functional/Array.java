@@ -3,6 +3,7 @@ package vandy.mooc.functional;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.UnaryOperator;
+import java.util.stream.IntStream;
 
 /**
  * A generic unsynchronized array class implemented via a single
@@ -63,7 +64,10 @@ public class Array<E>
      */
     public Array(int initialCapacity) {
         // TODO -- you fill in here.
-        
+        if (initialCapacity < 0 )
+            throw new IllegalArgumentException("Initial capacity cannot be negative: " + initialCapacity);
+        this.mElementData = new Object[initialCapacity];
+        this.mSize = 0;
     }
 
     /**
@@ -78,7 +82,10 @@ public class Array<E>
      */
     public Array(Collection<? extends E> c) {
         // TODO -- you fill in here.
-        
+        if( c == null)
+            throw new NullPointerException("Collection can not be null!");
+        this.mElementData = Arrays.copyOf(c.toArray(), c.size());
+        this.mSize = c.size();
     }
 
     /**
@@ -87,7 +94,8 @@ public class Array<E>
     public boolean isEmpty() {
         // TODO -- you fill in here (replace 'return false' with
         // proper code).
-        return false;
+//        return this.mElementData.length == 0 || mSize == 0;
+        return mSize == 0;
     }
 
     /**
@@ -95,7 +103,7 @@ public class Array<E>
      */
     public int size() {
         // TODO -- you fill in here (replace 'return 0' with proper code).
-        return 0;
+        return this.mSize;
     }
 
     /**
@@ -111,7 +119,10 @@ public class Array<E>
     public int indexOf(Object o) {
         // TODO -- you fill in here (replace 'return -1' with proper
         // code).
-        return -1;
+        return IntStream.range(0, this.mSize)
+                .filter(i -> mElementData[i] == null ? o==null : mElementData[i].equals(o))
+                .findFirst()
+                .orElse(-1);
     }
 
     /**
@@ -136,7 +147,18 @@ public class Array<E>
         // proper code).  Try to avoid using Java loops, but use
         // System.arraycopy() instead and also call
         // ensureCapacityInternal() to simplify this code.
-        return false;
+        if(c == null)
+            throw new NullPointerException("Array should not be null!");
+
+        ensureCapacityInternal (c.size());
+
+        if(c.isEmpty())
+            return false;
+
+        System.arraycopy(c.toArray(),0, mElementData, mSize,c.size());
+
+        mSize += c.size();
+        return true;
     }
 
     /**
@@ -161,7 +183,19 @@ public class Array<E>
         // proper code).  Try to avoid using Java loops, but use
         // System.arraycopy() instead and also call
         // ensureCapacityInternal() to simplify this code.
-        return false;
+        if(array == null)
+            throw new NullPointerException("Array should not be null!");
+
+        ensureCapacityInternal (array.size());
+
+        if(array.isEmpty())
+            return false;
+
+        System.arraycopy(array.toArray(),0, mElementData, mSize,array.size());
+
+        mSize += array.size();
+
+        return true;
     }
 
     /**
@@ -177,7 +211,10 @@ public class Array<E>
         // code).  Try to avoid using Java loops, but use
         // System.arraycopy() instead and also call rangeCheck() to
         // simplify this code.
-        return null;
+        rangeCheck(index);
+        E result = (E)this.mElementData[index];
+        System.arraycopy(this.mElementData,index+1,mElementData,index,mSize-1-index);
+        return result;
     }
 
     /**
@@ -195,7 +232,8 @@ public class Array<E>
      */
     public void rangeCheck(int index) throws IndexOutOfBoundsException {
         // TODO -- you fill in here.
-        
+        if(index<0 || index>=mSize)
+            throw new IndexOutOfBoundsException("Index is out of bounds!");
     }
 
     /**
@@ -210,7 +248,8 @@ public class Array<E>
     public E get(int index) {
         // TODO -- you fill in here (replace 'return null' with proper
         // code).  Make sure to use the rangeCheck() method here.
-        return null;
+        rangeCheck(index);
+        return (E)mElementData[index];
     }
 
     /**
@@ -226,7 +265,10 @@ public class Array<E>
     public E set(int index, E element) {
         // TODO -- you fill in here (replace 'return null' with proper
         // code).
-        return null;
+        rangeCheck(index);
+        E returnItem = (E)mElementData[index];
+        mElementData[index] = element;
+        return returnItem;
     }
 
     /**
@@ -239,7 +281,10 @@ public class Array<E>
         // TODO -- you fill in here (replace 'return false' with
         // proper code).  Call ensureCapacityInternal() to simplify
         // this code.
-        return false;
+        ensureCapacityInternal(1);
+        mElementData [mSize] = element;
+        ++mSize;
+        return true;
     }
 
     /**
@@ -256,7 +301,16 @@ public class Array<E>
     protected void ensureCapacityInternal(int minCapacity) {
         // TODO -- you fill in here.  Try to avoid using Java loops,
         // but use System.arraycopy() or Arrays.copyOf() instead.
-        
+        if(mElementData.length == 0)
+            this.mElementData = new Object[DEFAULT_CAPACITY];
+
+        if(minCapacity > this.mElementData.length - this.mSize){
+//            int newCapacity = Math.max(this.mElementData.length + minCapacity, 2*this.mElementData.length);
+            int newCapacity = this.mElementData.length + minCapacity;
+            Object[] newElementData = new Object[newCapacity];
+            System.arraycopy(mElementData,0, newElementData, 0, this.mSize);
+            mElementData = newElementData;
+        }
     }
 
     /**
@@ -266,7 +320,7 @@ public class Array<E>
     public Iterator<E> iterator() {
         // TODO -- you fill in here replacing this statement with your
         // solution.
-        return null;
+        return new ArrayIterator();
     }
 
     /**
@@ -279,13 +333,17 @@ public class Array<E>
          * Current position in the {@link Array} (defaults to 0).
          */
         // TODO - you fill in here.
+        private int currentIndex = 0;
+
         
 
         /**
          * Index of last element returned; -1 if no such element.
          */
         // TODO - you fill in here.
-        
+        private int lastReturned = -1;
+
+        private boolean canRemove = false;
 
         /**
          * @return True if the iteration has more elements that
@@ -295,7 +353,7 @@ public class Array<E>
         public boolean hasNext() {
             // TODO - you fill in here (replace 'return false' with
             // proper code).
-            return false;
+            return currentIndex < mSize;
         }
 
         /**
@@ -307,7 +365,10 @@ public class Array<E>
         public E next() {
             // TODO - you fill in here (replace 'return null' with
             // proper code).
-            return null;
+            if (!hasNext())
+                throw  new NoSuchElementException("No more to iterate!");
+            canRemove = true;
+            return (E)mElementData[currentIndex++];
         }
 
         /**
@@ -321,7 +382,15 @@ public class Array<E>
         @Override
         public void remove() {
             // TODO - you fill in here
-            
+            if(isEmpty())
+                throw new IllegalStateException("Empty!");
+            if(!canRemove)
+                throw new IllegalArgumentException("next has not been called!");
+            IntStream.range(currentIndex-1, mSize-1).forEach(n -> mElementData[n] = mElementData[n+1]);
+            mElementData[mSize-1] = null;
+            mSize--;
+            currentIndex--;
+            canRemove = false;
         }
     }
 
@@ -343,7 +412,8 @@ public class Array<E>
     public void replaceAll(UnaryOperator<E> operator) {
         // TODO - you fill in here (this implementation can use a Java
         //  index-based for loop).
-        
+        for(int i=0; i<mSize; i++)
+            mElementData[i] = operator.apply((E)mElementData[i]);
     }
 
     /**
@@ -361,7 +431,7 @@ public class Array<E>
     public void forEach(Consumer<? super E> action) {
         // TODO - You fill in here using a for-each loop or
         // the Iterator.forEachRemaining() method.
-        
+        IntStream.range(0,mSize).forEach(n -> action.accept((E)mElementData[n]));
     }
 
     /**
@@ -372,7 +442,7 @@ public class Array<E>
         // with a solution using a for-each loop or (better
         // yet) the Iterator.forEachRemaining() method and
         // a method reference.
-        return null;
+        return (List<E>) Arrays.stream(mElementData).toList();
     }
 
     /*
